@@ -16,7 +16,7 @@ public:
             vector<int> ans;
             for(int i= 0 ; i<n ; i++)
             {
-             TreeNode* front = q.front();
+            TreeNode* front = q.front();
             q.pop();
             ans.push_back(front->val);
             if(front->left!=NULL)
@@ -28,6 +28,7 @@ public:
                 q.push(front->right);
             }
             }
+
 
            ans1.push_back(ans);
         }
